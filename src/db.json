@@ -1,0 +1,134 @@
+{
+    "menu": [
+        {
+            "appetizers": [
+                {
+                    "id": 0,
+                    "itemName": "CRAB DIP",
+                    "description": "Served in your choice of a sourdough bread bowl or with an order of Soft Pretzel Stix on the side",
+                    "price": 12.95
+                },
+                {
+                    "id": 1,
+                    "itemName": "FRIED PICKLES",
+                    "description": "Battered Deep Fried Pickles served with ranch",
+                    "price": 6.95
+                },
+                {
+                    "id": 2,
+                    "itemName": "MOZZARELLA STICKS",
+                    "description": "Mozzarella cheese sticks served w/ marinara sauce",
+                    "price": 6.95
+                },
+                {
+                    "id": 3,
+                    "itemName": "ONION RINGS",
+                    "description": "Large basket of crispy beer-battered onion rings served w/ boom boom sauce",
+                    "price": 6.95
+                },
+                {
+                    "id": 4,
+                    "itemName": "SOFT PRETZEL STIX",
+                    "description": "Local Revonah pretzel sticks served warm w/ cheese sauce",
+                    "price": 4.95
+                },
+                {
+                    "id": 5,
+                    "itemName": "NACHOS",
+                    "description": "Tortilla chips loaded with cheese, tomatoes, onions and Jalapeños served w/ salsa and sour cream. Add taco meet for $1.95",
+                    "price": 7.95
+                },
+                {
+                    "id": 6,
+                    "itemName": "FRENCH FRIES",
+                    "description": "",
+                    "price": 3.95
+                }
+            ],
+            "entrees": [
+                {
+                    "id": 0,
+                    "itemName": "MEATLOAF DINNER",
+                    "description": "House made meatloaf. Served with a choice of two sides.",
+                    "price": 14.95
+                },
+                {
+                    "id": 1,
+                    "itemName": "8OZ FLAT IRON STEAK DINNER",
+                    "description": "Grilled to desired temp Add Mushrooms and Onions for $2. Served with a choice of two sides.",
+                    "price": 12.95
+                },
+                {
+                    "id": 2,
+                    "itemName": "BAKED SALMON",
+                    "description": "8oz Salmon Filet seasoned and baked to perfection. Served with a choice of two sides.",
+                    "price": 14.95
+                },
+                {
+                    "id": 3,
+                    "itemName": "FRIED FISH PLATTER",
+                    "description": "10oz Battered Haddock Fish Fried and Served w/ Tartar Sauce. Served with a choice of two sides.",
+                    "price": 13.95
+                },
+                {
+                    "id": 4,
+                    "itemName": "CHICKEN MONTERREY",
+                    "description": "Two baked Chicken Breasts coated with BBQ and topped with Bacon and shredded Cheddar/Jack Cheese. Served with a choice of two sides.",
+                    "price": 3.95
+                },
+                {
+                    "id": 5,
+                    "itemName": "JUMBO 12OZ. ALL LUMP CRAB CAKE",
+                    "description": "Crab cake baked golden brown made with all lump crab meat. Served with a choice of two sidesf",
+                    "price": 3.95
+                }
+            ],
+            "hours": [
+                {
+                    "id": 0,
+                    "day": "Monday",
+                    "open": "11 AM",
+                    "close": "10 PM"
+                },
+                {
+                    "id": 1,
+                    "day": "Tuesday",
+                    "open": "11 AM",
+                    "close": "10 PM"
+                },
+                {
+                    "id": 2,
+                    "day": "Wednesday",
+                    "open": "11 AM",
+                    "close": "10 PM"
+                },
+                {
+                    "id": 3,
+                    "day": "Thursday",
+                    "open": "11 AM",
+                    "close": "10 PM"
+                },
+                {
+                    "id": 4,
+                    "day": "Friday",
+                    "open": "11 AM",
+                    "close": "11 PM"
+                },
+                {
+                    "id": 5,
+                    "day": "Saturday",
+                    "open": "11 AM",
+                    "close": "11 PM"
+                },
+                {
+                    "id": 6,
+                    "day": "Sunday",
+                    "open": "12 PM",
+                    "close": "9 PM"
+                }
+            ]
+        }
+
+    ]
+
+}

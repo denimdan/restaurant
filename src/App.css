@@ -1,38 +1,50 @@
-.App {
-  text-align: center;
+.navbar-dark {
+  background-color: #A95107;
+  padding: 0px;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.jumbotron {
+  background-image: url('./images/jumbotron.jpg');
+  background-size: cover;
+  height: 300px;
+  background-position: 0 50%;
+  margin-bottom: 0px !important;
+  border-radius: 0 !important;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+  h2, h5 {
   color: white;
 }
 
-.App-link {
-  color: #61dafb;
+.footer {
+  background-image: linear-gradient(to top, #1d1716,#402a23, #a55233);
+  position:fixed;
+  bottom:0;
+  left:0;
+  width:100%;
+  height: 90px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.row-content {
+  padding: 50px 0;
+  border-bottom: 1px ridge;
+  min-height: 200px;
+}
+
+.container {
+  text-align: center;
+}
+
+.food-menu {
+  text-align: center;
+  margin-bottom: 20rem;
+}
+
+.header {
+  text-align: right
+}
+
+.navbar-fixed-top {
+  top: 0;
+  position: fixed;
 }
