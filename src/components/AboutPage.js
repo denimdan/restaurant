@@ -14,7 +14,7 @@ function StoreHours({ hours, isHoursLoading }) {
     }
 
     return (
-        <div className="col-md-6">
+        <>
             <h3>Hours</h3>
                 {
             hours.map(hour => (
@@ -24,7 +24,7 @@ function StoreHours({ hours, isHoursLoading }) {
                 </div>
             ))
         }
-        </div>
+        </>
     )
 }
 
@@ -33,10 +33,10 @@ export default function AboutPage({ hours, isLoading }) {
     
     return (
         
-        <div className="container mt-4">
+        <div className="container  mt-4">
  
             <div className="row">
-                <div className="col-md-6 ">
+                <div className="col ">
                     <h3>Location</h3>
                     123 Main St.<br />
                     City, State 12345<br />
@@ -48,8 +48,10 @@ export default function AboutPage({ hours, isLoading }) {
                     allowfullscreen
                     src="https://www.google.com/maps/embed/v1/place?key=AIzaSyAbApl9_1G_sR0uJMP6_C2fVP9-TX9y_g4&q=Eiffel+Tower,Paris+France">
                 </iframe>
-                </div>                    
+                </div>       
+                <div className="col">
                 <StoreHours hours={hours} isLoading={isLoading}/>
+                </div>
             </div>
 
         </div>

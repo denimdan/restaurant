@@ -54,8 +54,6 @@ class Header extends Component {
                 </Jumbotron>
 
                 <Navbar dark sticky="top" expand="sm" className="fixed-top">
-                    <div className="container">
-
                         <NavbarToggler className="ml-auto" onClick={this.toggleNav} />
                         <Collapse isOpen={this.state.isNavOpen} navbar>
                             <Nav navbar>
@@ -81,7 +79,6 @@ class Header extends Component {
                                 </Button>
                             </span>
                         </Collapse>
-                    </div>
                 </Navbar>
                 <Modal isOpen={this.state.isModalOpen} toggle={this.toggleModal} className="resModal">
                     <ModalHeader className="modal-header" toggle={this.toggleModal}>Reserve a Table</ModalHeader>

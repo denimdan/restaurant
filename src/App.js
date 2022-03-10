@@ -1,40 +1,30 @@
-import React, { useState, useEffect } from 'react';
-import axios from 'axios';
+import React, { useState } from 'react';
 import Header from './components/Header';
 import Footer from './components/Footer';
 import HomePage from './components/HomePage';
 import AboutPage from './components/AboutPage';
-import MenuPage from './components/MenuPage';
+import Menu from './components/Menu';
 import './App.css';
 import { BrowserRouter, Switch, Route, Redirect } from 'react-router-dom';
+import menu from './data/menu';
+import hoursList from './data/hours';
+
+const allCategories = ['all', ... new Set(menu.map((item) => item.category))];
 
 function App() {
 
-  const [items, setItems] = useState([]);
-  const [hours, setHours] = useState([]);
-  const [isMenuLoading, setIsMenuLoading] = useState(true);
-  const [isHoursLoading, setIsHoursLoading] = useState(true);  
+  const [menuItems, setMenuItems] = useState(menu);
+  const [categories, setCategories] = useState(allCategories);
+  const [hours, setHours] = useState(hoursList);
 
-  const fetchHours = async () => {
-    const result = await axios.get(
-      `http://localhost:3001/hours`
-    )
-    setHours(result.data)
-    setIsHoursLoading(false)
-  }
-
-  const fetchItems = async () => {
-    const result = await axios.get(
-      `http://localhost:3001/menu`
-    )
-    setItems(result.data[0])
-    setIsMenuLoading(false)
-  }
-
-  useEffect(() => {
-    fetchItems()
-    fetchHours()
-  }, [])
+    const filterItems = (category) => {
+    if (category === 'all') {
+      setMenuItems(menu);
+      return;
+    }
+    const newItems = menu.filter((item) => item.category === category);
+    setMenuItems(newItems)
+  };
 
   return (
     <div className="App">
@@ -42,11 +32,11 @@ function App() {
         <Header />
         <Switch>
           <Route path='/home' component={HomePage} />
-          <Route path='/about' render={() => <AboutPage isHoursLoading={isHoursLoading} hours={hours} />} />
-          <Route path='/menu' render={() => <MenuPage isMenuLoading={isMenuLoading} items={items} />} />
+          <Route path='/about' render={() => <AboutPage  hours={hours} />} />          
+          <Route path='/menu' render={() => <Menu items={menuItems} categories={categories} filterItems={filterItems} />} />
           <Redirect to='/home' />
         </Switch>
-        {/* <Footer /> */}
+        <Footer />
       </BrowserRouter>
     </div>
   );
